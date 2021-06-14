@@ -1,0 +1,11 @@
+[package]
+name = "listen-pg-echo"
+version = "0.1.0"
+authors = ["imbolc <me@imbolc.name>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.41"
+clap = "3.0.0-beta.2"
+sqlx = { version = "0.5.5", features = ["runtime-tokio-rustls", "postgres"] }
+tokio = { version = "1", features = ["macros"] }
